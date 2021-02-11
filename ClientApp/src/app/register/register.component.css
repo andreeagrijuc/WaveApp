@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-content: space-around;
+  align-items: stretch;
+  background-color: #F9F2F1;
+  background: rgba(240, 243, 244, 0.8);
+  flex-direction: column;
+  width: 450px;
+  height: 750px;
+  position: relative;
+  top: 25px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}

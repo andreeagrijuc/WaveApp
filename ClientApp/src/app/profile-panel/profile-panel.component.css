@@ -1,0 +1,19 @@
+.profileCont {
+  display: flex;
+ 
+  flex-direction: column;
+  background-color: #F9F2F1;
+  background: rgba(240, 243, 244, 0.8);
+  column-width: 250px;
+  height: 800px;
+  margin: 65px 1px 65px 65px;
+  padding: 1em;
+  border-radius: 15px 1px 1px 15px;
+}
+.img {
+  margin: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}

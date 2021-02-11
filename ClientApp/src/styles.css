@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Provide sufficient contrast against white background */
+@import "app/app.component.css";
+@import "app/home/home.component.css";
+@import "app/post/post.component.css";
+a {
+  color: #0366d6;
+}
+body {
+  background-image: url("assets/backgroundWave.jpg");
+/* <!-- -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);-->*/
+}
+
+

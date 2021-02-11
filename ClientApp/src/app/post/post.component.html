@@ -1,0 +1,38 @@
+<body>
+  <div class="card mb-3"> <!-- (click)="goToPostDetails() -->
+    <div class="row g-0">
+      <div >
+        <img class="imgPost" src="../../assets/face1.jpg" alt="...">
+      </div>
+      <div class="col-sm-6">
+        <div class="card-body">
+          <div class="card-title">
+            <div class="wrapper">
+              <div>{{userPost.authorName}}</div>
+             <!-- <div id="lastName">{{user.lastName}}</div>-->
+            </div>
+          </div>
+          <p class="card-text">{{userPost.bodyPost}}</p>
+          <div>
+            <div class="wrapper">
+              <h5>{{userPost.likesNum}}</h5>
+              <h5 id="splashes">Splashes</h5>
+            </div>
+            <br/>
+            <button type="button" class="btn btn-outline-info" (click)="likeButtonClicked()">Splash!</button>
+            <button type="button" class="btn btn-outline-info" (click)="addComments()">Comment</button>
+          </div>
+          <div id="commLine" *ngIf="showComments">
+            <textarea class="textField" [(ngModel)]="comment"></textarea>
+            <button type="button" class="btn btn-outline-info" (click)="postComm()">Post</button>
+            <div *ngFor="let comment of commList">
+              <p>{{comment}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</body>
+

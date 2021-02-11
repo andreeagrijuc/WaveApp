@@ -1,0 +1,30 @@
+.post {
+   border: 1px solid black;
+   padding: 1px;
+}
+.card mb-3 {
+    width: 80%;
+    
+}
+.wrapper {
+    display: inline-flex;
+   
+   color: #40b2b2;
+}
+#splashes {
+  font-size: 15px;
+  margin-left: 10px;
+
+  bottom: 100px;
+}
+.imgPost {
+  margin: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+#lastName {
+    margin-left: 3px;
+}
+

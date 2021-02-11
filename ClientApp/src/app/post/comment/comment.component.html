@@ -1,0 +1,8 @@
+<div id="commLine" *ngIf="!showComments">
+  <textarea class="textField" [(ngModel)]="comment"></textarea>
+  <button type="button" class="btn btn-outline-info" (click)="postComm()">Post</button>
+</div>
+<div *ngFor="let comment of commList">
+  <p>{{comment}}</p>
+</div>
+

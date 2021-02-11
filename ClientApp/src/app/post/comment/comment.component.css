@@ -1,0 +1,10 @@
+.textField {
+  margin: 12px 12px 12px 12px;
+}
+.btn btn-outline-info {
+  margin: 12px 12px 12px 12px;
+
+}
+#commLine {
+    display: inline-flex;
+}

@@ -1,0 +1,44 @@
+.homeContainer {
+ 
+  /* display: grid;
+  grid-template-columns: 15% auto 15%;
+  grid-template-rows: 10% 5% auto 15%;*/
+}
+.bodyApp {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navBar {
+  /*grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;*/
+}
+.profilePanel {
+  width: 350px;
+  
+
+  /*  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 0;
+  grid-row-end: 1;*/
+}
+.mainFeed {
+
+  /*grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;*/
+  background-color: #F9F2F1;
+  background: rgba(240, 243, 244, 0.8);
+  column-width: 750px;
+  height: 800px;
+  margin: 65px 65px 65px 1px;
+  padding: 1em;
+  border-radius: 1px 15px 15px 1px;
+  text-align: justify;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
