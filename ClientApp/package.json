@@ -25,7 +25,7 @@
     "aspnet-prerendering": "^3.0.1",
     "bootstrap": "^4.3.1",
     "core-js": "^3.3.3",
-    "jquery": "3.4.1",
+    "jquery": "^3.6.0",
     "oidc-client": "^1.9.1",
     "popper.js": "^1.16.0",
     "rxjs": "^6.5.3",
@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.803.26",
-    "@angular/cli": "^8.3.26",
+    "@angular/cli": "^11.2.7",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/language-service": "^8.2.12",
     "@types/jasmine": "~3.4.4",
@@ -50,7 +50,7 @@
     "typescript": "3.5.3"
   },
   "optionalDependencies": {
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.5.3",
     "protractor": "~5.4.2",
     "ts-node": "~8.4.1",
     "tslint": "~5.20.0"

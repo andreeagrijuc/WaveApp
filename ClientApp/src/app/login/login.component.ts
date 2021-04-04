@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { AccountService } from '../services/account.service';
+import { UserService } from '../services/user-service';
 
 export class LoginData {
   email: string;
@@ -24,7 +26,9 @@ export class LoginComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    private router: Router
+    private accountService: AccountService,
+    private router: Router,
+    private userService: UserService
   ) { }
 
   ngOnInit(): void {
@@ -42,6 +46,12 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return;
     }
+    this.accountService.login(this.loginForm.value).subscribe((response: any) => {
+      console.log(response);
+      localStorage.setItem("token", response.token);
+      this.userService.addFirstName(response.firstName);
+      this.router.navigateByUrl("home");
+    })
   
 
   const loginData: LoginData = new LoginData(

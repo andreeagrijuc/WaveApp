@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user-service';
 
 @Component({
   selector: 'app-profile-panel',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./profile-panel.component.css']
 })
 export class ProfilePanelComponent implements OnInit {
-
-  constructor() { }
+  firstName: string;
+  constructor(private userService: UserService) {
+    this.userService.firstaNameStream.subscribe((firstName: string) => {
+      this.firstName = firstName;
+    });
+  }
 
   ngOnInit() {
   }

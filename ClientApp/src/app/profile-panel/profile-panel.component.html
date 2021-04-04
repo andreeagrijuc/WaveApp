@@ -1,10 +1,18 @@
 <div class="profileCont">
+  <h1>Wave</h1>
+  <div *ngIf="firstName">
+    <p>Hello, {{firstName}}</p>
+  </div>
   <div>
     <img class="img" src="../../assets/face1.jpg" alt="face" />
+  
   </div>
-  <button type="button" class="btn btn-outline-info">Profile Settings</button>
-  <button type="button" class="btn btn-outline-info">Privacy</button>
-  <div class="wrapper">
-
-  </div>
+  <nav>
+    <button type="button" class="btn btn-outline-info">Profile Settings</button>
+    <button type="button" class="btn btn-outline-info" [routerLink]="'/home/feed-posts-list/feed'" routerLinkActive="active">Feed</button>
+    <button type="button" class="btn btn-outline-info">Following List</button>
+    <button type="button" class="btn btn-outline-info" [routerLink]="'/home/feed-posts-list/followers'" routerLinkActive="active">Followers List</button>
+    <button type="button" class="btn btn-outline-info">Sign Out</button>
+  </nav>
+ 
 </div>
