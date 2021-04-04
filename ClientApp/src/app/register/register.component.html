@@ -1,6 +1,9 @@
 <div class="container">
   <h3 class="text-center">Welcome to Wave!</h3>
   <h1 class="text-center">Register</h1>
+  <div class="alert alert-success" role="alert" *ngIf="registerForm.valid && submittedPressed" >
+    Your account has been created
+  </div>
   <div class="row">
     <div class="row-5">
       <form [formGroup]="registerForm">
@@ -37,7 +40,10 @@
 
           <div class="form-group">
             <label>Password</label>
-            <input type="password" class="form-control" formControlName="password" minlength="3" required />
+            <input type="password"
+                   class="form-control"
+                   formControlName="password"
+                   minlength="3" required />
             <div *ngIf="password.invalid && password.touched">
               <div *ngIf="password.errors.required">
                 Password is required
@@ -50,21 +56,26 @@
 
           <div class="form-group">
             <label>Confirm Password</label>
-            <input type="password" class="form-control" formControlName="confPassword" required />
+            <input type="password"
+                   placeholder="Confirm the password"
+                   formControlName="confPassword"
+                   class="form-control"
+                   maxlength="30"
+                   minlength="3"
+                   required />
             <div *ngIf="confPassword.invalid && confPassword.touched">
               <div *ngIf="confPassword.errors.required">
-                Confirm Password is required
+                <p class="required-color">Confirm Password is required</p>
               </div>
-
             </div>
-
           </div>
 
           <div *ngIf="password.touched && passwords.errors?.confPass">
-            Your passwords don't match
+            <p class="required-color">Your passwords do not match</p>
           </div>
 
         </div>
+
 
       </form>
       <button type="button" class="btn btn-outline-info" (click)="submit()">Register</button>

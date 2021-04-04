@@ -2,29 +2,26 @@
 <body>
 
   <div class="homeContainer">
-    <div class="navBar">
+    <!--<div class="navBar">
       
         <app-nav-menu></app-nav-menu>
-      </div>
+      </div>-->
      
    
     <div class="bodyApp">
+
       <div class=".col-md-4">
         <div class="profilePanel">
           <app-profile-panel></app-profile-panel>
         </div>
       </div>
+
       <div class=".col-md-8">
         <div class="mainFeed">
-
-          <label>What is your main focus for today, ?</label>
-          <div>
-            <input type="text" style="width:400px" />
-            <button type="button" class="btn btn-outline-info" (click)="addPost()">Add post</button>
-          </div>
-          <app-feed style="overflow-y:scroll;"></app-feed>
+          <app-feed-posts-list></app-feed-posts-list>
         </div>
       </div>
+
     </div>
     
 

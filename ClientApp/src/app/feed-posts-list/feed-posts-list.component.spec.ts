@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ProfilePanelComponent } from './profile-panel.component';
+import { FeedPostsListComponent } from './feed-posts-list.component';
 
-describe('ProfilePanelComponent', () => {
-  let component: ProfilePanelComponent;
-  let fixture: ComponentFixture<ProfilePanelComponent>;
+describe('FeedPostsListComponent', () => {
+  let component: FeedPostsListComponent;
+  let fixture: ComponentFixture<FeedPostsListComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProfilePanelComponent ]
+      declarations: [ FeedPostsListComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ProfilePanelComponent);
+    fixture = TestBed.createComponent(FeedPostsListComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

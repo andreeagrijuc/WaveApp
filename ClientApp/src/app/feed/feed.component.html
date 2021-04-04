@@ -1,4 +1,11 @@
+
+<label>What is your main focus for today, ?</label>
+<div>
+  <input type="text" style="width:400px" />
+  <button type="button" class="btn btn-outline-info" (click)="addPost()">Add post</button>
+</div>
 <div class="feed">
   <app-post *ngFor="let userPost of userPosts" [userPost]="userPost"></app-post>
+  <button type="button" class="btn btn-outline-info">load more</button>
 </div>
 
